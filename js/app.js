@@ -30,7 +30,7 @@ window.onload = ( event ) =>
         
         setTimeout( () => document.getElementById( 'sscMainSite' ).style.opacity = '1', 50);
 
-    }, 2000);
+    }, 4000);
 }
 
 // On Scroll
