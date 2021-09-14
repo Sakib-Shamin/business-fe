@@ -1,0 +1,646 @@
+/*****
+Created by: Sakib Shamin
+Email: Sakib.Shamin@gmail.com
+Github:https://github.com/Sakib-Shamin
+LinkedIn:https://www.linkedin.com/in/sakibshamin/
+
+*****/
+
+/* Importing fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
+
+/* Project font */
+
+html
+{
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, .ssc-strong, .ssc-light, header, #sscBusinessMainForm .ssc-business-section-content
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* This is the loader item. It may or may not be needed */
+
+#sscLoader
+{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
+}
+
+/* This is the main site */
+
+#sscMainSite
+{
+    display: none;
+    opacity: 0;
+    transition: opacity 2s ease-in;
+}
+
+/* Overriding width of the container */
+
+.ssc-container
+{
+    max-width: 1400px;
+}
+
+/* Texts */
+
+h1
+{
+    font-size: 3.5em;
+}
+
+h2
+{
+    font-size: 2.5em;
+}
+
+h3
+{
+    font-size: 2em;
+}
+
+.ssc-strong
+{
+    font-size: 1.3em;
+}
+
+.ssc-light
+{
+    font-size: 1.5em;
+}
+
+.ssc-btn:hover, #sscBusinessHeaderTop .ssc-business-social-media li, #sscBusinessHome, #sscBusinessSubscription input, #sscBusinessSubscription input::placeholder
+{
+    color: #fff;
+}
+
+#sscBusinessHeaderBottom ul, .ssc-business-step-no p::before
+{
+    font-weight: 700;
+}
+
+/* Positions */
+
+header, .ssc-business-section-title-underline, #sscBusinessHeaderBottom ul li, .ssc-business-approach-steps-single, .ssc-business-work-single, .ssc-business-work-single img, #sscBusinessMainFormContent, #sscBusinessMainFormContent > div, #sscBusinessSubscription .ssc-form-group:not(:last-child), #sscBusinessSubscription .ssc-form-group > *
+{
+    position: relative;
+}
+
+.ssc-business-section-title-underline::after, #sscBusinessHeaderBottom ul li:not(li:last-child):not(li:nth-last-child(2))::after, .ssc-business-step-no, .ssc-business-work-single::before, #sscBusinessMainFormContent::before, #sscBusinessMainFormCloser, #sscBusinessSubscription .ssc-form-group:not(:last-child):before, #sscBusinessSubscription button::after
+{
+    position: absolute;
+}
+
+/* Pseudo Elements*/
+
+.ssc-business-section-title-underline::after, #sscBusinessHeaderBottom ul li:not(li:last-child):not(li:nth-last-child(2))::after, .ssc-business-work-single::before, #sscBusinessMainFormContent::before, #sscBusinessSubscription .ssc-form-group:not(:last-child):before, #sscBusinessSubscription button::after
+{
+    content: "";
+}
+
+a:not(#sscBusinessHeaderBottom a):not(#sscBusinessMainFormCloser):hover
+{
+    color: inherit;
+}
+
+a, .ssc-btn
+{
+    transition: 0.5s;
+}
+
+#sscBusinessHeaderTop .ssc-business-social-media a:hover, .ssc-btn:not(#sscBusinessMainFormOpener):not(#sscBusinessMainFormCloser):hover
+{
+    transform: scale(1.1);
+}
+
+#sscBusinessHeaderBottom, .ssc-business-work-single::before, #sscBusinessSubscription .ssc-form-group:not(:last-child)::before, #sscBusinessSubscription button::after
+{
+    width: 100%;
+}
+
+#sscBusinessHeaderBottom, .ssc-business-work-single::before, #sscBusinessSubscription .ssc-form-group:not(:last-child)::before, #sscBusinessSubscription button::after
+{
+    left: 0;
+}
+
+.ssc-business-work-single::before, #sscBusinessSubscription .ssc-form-group:not(:last-child)::before, #sscBusinessSubscription button::after
+{
+    top: 0;
+}
+
+.ssc-business-work-single::before, #sscBusinessSubscription .ssc-form-group:not(:last-child)::before, #sscBusinessSubscription button::after
+{
+    height: 100%;
+}
+
+/* All Sections */
+
+section:not(#sscBusinessHome)
+{
+    padding: 7.5rem 0;
+}
+
+.ssc-business-section-title-underline::after
+{
+    width: 3.5rem;
+    height: 0.3rem;
+    left: 48%;
+    margin-top: 1rem;
+}
+
+/* Flexbox Alignment */
+
+.ssc-flex.ssc-business-social-media, .ssc-business-social-media a, #sscBusinessHome, .ssc-business-approach-steps-single, .ssc-business-step-no, .ssc-business-work-single, #sscBusinessMainForm .ssc-business-section-title, #sscBusinessMainForm .ssc-business-section-title div, #sscBusinessMainForm .ssc-business-section-content, #sscBusinessSubscription .ssc-container
+{
+    justify-content: center;
+}
+
+.ssc-flex.ssc-business-social-media, .ssc-business-social-media a, header nav .ssc-flex, #sscBusinessHome, .ssc-business-approach-steps-single, .ssc-business-step-no, .ssc-business-work-single, #sscBusinessMainForm .ssc-business-section-title, #sscBusinessMainForm .ssc-business-section-title div, #sscBusinessMainForm .ssc-business-section-content, #sscBusinessSubscription .ssc-container
+{
+    align-items: center;
+}
+
+/* Background Colors */
+
+body, #sscBusinessHeaderBottom, .ssc-business-approach-steps-single, #sscBusinessWork .ssc-business-section-title-underline::after, .ssc-business-work-single::before, #sscBusinessMainForm .ssc-business-section-content > div, #sscBusinessSubscription .ssc-form-group:not(:last-child):before
+{
+    background-color: #fff;
+}
+
+#sscBusinessHeaderBottom ul li:not(li:last-child):not(li:nth-last-child(2))::after, .ssc-business-section-title-underline::after
+{
+    background-color: var(--dark-color);
+}
+
+/* Opacity */
+
+.ssc-business-work-single::before, .ssc-business-work-single i, #sscBusinessMainForm .ssc-form-control, #sscBusinessSubscription .ssc-form-group:not(:last-child):before, #sscBusinessSubscription button::after
+{
+    opacity: 0.3;
+}
+
+/* Social Media */
+
+.ssc-business-social-media a
+{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+}
+
+/* Sticky Header */
+
+/* .ssc-sticky-menu
+{
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0 0 1px;
+} */
+
+/* Header */
+
+#sscBusinessHeaderTop ul.ssc-flex
+{
+    justify-content: flex-end;
+}
+
+#sscBusinessHeaderTop .ssc-business-social-media a
+{
+    background-color: #1287bf;
+}
+
+#sscBusinessHeaderBottom .ssc-flex
+{
+    justify-content: space-between;
+}
+
+#sscBusinessHeaderBottom ul li:not(li:last-child):not(li:nth-last-child(2))::after
+{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    left: 100%;
+    top: 40%;
+}
+
+/* Hero */
+
+#sscBusinessHome
+{
+    background: url('../images/banner.png') no-repeat center;
+    background-size: cover;
+    min-height: 800px;
+}
+
+#sscBusinessHome .ssc-light
+{
+    font-size: 0.6em;
+    display: block;
+}
+
+/* About */
+
+#sscBusinessAbout .ssc-business-section-content
+{
+    align-items: flex-start;
+}
+
+/* Approach */
+
+.ssc-business-approach-steps-single
+{
+    counter-increment: step-no;
+}
+
+.ssc-business-step-no
+{
+    border: 2px solid;
+}
+
+.ssc-business-approach-steps-single:nth-child(odd) .ssc-business-step-no
+{
+    left: 28%;
+}
+
+.ssc-business-approach-steps-single:nth-child(even) .ssc-business-step-no
+{
+    right: 28%;
+}
+
+.ssc-business-step-no p::before
+{
+    content: counter(step-no) '\a';
+    white-space: pre;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.ssc-business-approach-steps-single div:last-child
+{
+    padding: 0 6.5rem;
+}
+
+.ssc-business-approach-steps-single:nth-child(even) div:last-child
+{
+    text-align: right;
+}
+
+.ssc-business-approach-steps-single .ssc-strong::before
+{
+    content: "Step " counter(step-no) " : ";
+}
+
+/* Work */
+
+.ssc-business-work-single div:first-child
+{
+    padding: 85px 0;
+}
+
+.ssc-business-work-single div:last-child
+{
+    transform: scaleY(1.4);
+    overflow: hidden;
+}
+
+.ssc-business-work-single h3
+{
+    margin-top: 1.5rem;
+}
+
+.ssc-business-work-single img
+{
+    transform: matrix(1.5, 0, 0, 1, -85, 0);
+}
+
+/* Main Form */
+
+#sscBusinessMainFormOpener
+{
+    border: 7px solid;
+}
+
+#sscBusinessMainFormOpener:hover > i
+{
+    animation-play-state: paused;
+}
+
+#sscBusinessMainForm .ssc-business-section-content::before
+{
+    border: 2.5rem solid transparent;
+    border-top: none;
+    border-bottom-color: #fff;
+    bottom: 100%;
+}
+
+#sscBusinessMainForm .ssc-business-section-content
+{
+    color: var(--dark-color);
+}
+
+#sscBusinessMainForm .ssc-form-group:not(:last-child)
+{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#sscBusinessMainForm .ssc-form-control:focus
+{
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0.2rem var(--secondary-color);
+}
+
+#sscBusinessMainFormContent
+{
+    display: none;
+    transition: all 2s;
+    transform: scaleY(0);
+    transform-origin: center top;
+}
+
+#sscBusinessMainFormCloser
+{
+    top: -1.5rem;
+    right: -1.5rem;
+    border: 3px solid;
+}
+
+/* Footer */
+
+#sscBusinessSubscription .ssc-business-social-media a
+{
+    border: 1px solid;
+}
+
+#sscBusinessSubscription .ssc-business-social-media a:hover
+{
+    border-color: var(--primary-color);
+}
+
+#sscBusinessSubscription input
+{
+    background-color: transparent;
+    border-color: transparent;
+    caret-color: #fff;
+    z-index: 2;
+}
+
+#sscBusinessSubscription button
+{
+    cursor: pointer;
+}
+
+#sscBusinessSubscription button::after
+{
+    border: 3px solid #fff;
+    border-radius: 0.5rem;
+}
+
+#sscBusinessCopywright
+{
+    opacity: 0.8;
+}
+
+
+/* Media Query */
+
+/* Large Screen */
+
+@media (max-width: 1199px)
+{
+    .ssc-container
+    {
+        max-width: 960px;
+    }
+
+    .ssc-business-work-single
+    {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+
+    .ssc-business-approach-steps-single > div:last-child
+    {
+        padding: 0 5.5rem;
+    }
+
+    .ssc-business-work-single:nth-child(odd)
+    {
+        flex-direction: row;
+    }
+
+    .ssc-business-work-single:nth-child(even)
+    {
+        flex-direction: row-reverse;
+    }
+
+    .ssc-business-work-single > div:first-child
+    {
+        padding: 0;
+    }
+
+    .ssc-business-work-single > div:last-child
+    {
+        transform: scaleY(1);
+    }
+
+    .ssc-business-work-single img
+    {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+}
+
+/* Medium Screen */
+
+@media (max-width: 991px)
+{
+    .ssc-container
+    {
+        max-width: 720px;
+    }
+
+    #sscBusinessHeaderBottom .ssc-flex
+    {
+        justify-content: center;
+    }
+
+    .ssc-business-approach-steps-single
+    {
+        align-items: stretch;
+    }
+
+    .ssc-business-step-no
+    {
+        display: none;
+    }
+
+    .ssc-business-approach-steps-single > div:not(:first-child), .ssc-business-work-single
+    {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Small Screen */
+
+@media (max-width: 767px)
+{
+    .ssc-container
+    {
+        max-width: 540px;
+    }
+
+    #sscBusinessHeaderTop .ssc-flex
+    {
+        justify-content: space-evenly !important;
+    }
+
+    #sscBusinessHeaderBottom
+    {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #sscBusinessHeaderBottom .ssc-flex li:not(:last-child)
+    {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    section:not(#sscBusinessHome)
+    {
+        padding: 3.5rem 0;
+    }
+
+    #sscBusinessHome
+    {
+        min-height: 500px;
+        background-color: var(--dark-color);
+    }
+
+    .ssc-business-section-title-underline::after
+    {
+        left: 45%;
+    }
+
+    #sscBusinessAbout .ssc-flex
+    {
+        flex-direction: column;
+    }
+
+    #sscBusinessAbout .ssc-flex div
+    {
+        padding-top: 2rem;
+    }
+
+    #sscBusinessMainFormContent
+    {
+        margin-top: 1.5rem;
+    }
+
+    #sscBusinessMainFormContent input[type=submit]
+    {
+        padding: 1rem 2rem;
+    }
+}
+
+/* Extra Small Screen */
+
+@media (max-width: 575px) 
+{
+    .ssc-container
+    {
+        max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #sscBusinessHeaderTop .ssc-flex li:not(:last-child)
+    {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+
+    #sscBusinessHeaderBottom .ssc-flex
+    {
+        justify-content: center;
+    }
+
+    #sscBusinessHeaderTop .ssc-business-social-media
+    {
+        display: none;
+    }
+
+    #sscBusinessHeaderBottom
+    {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #sscBusinessHeaderBottom .ssc-flex li:not(:last-child)
+    {
+        padding: 0.5rem;
+    }
+
+    #sscBusinessHeaderBottom .ssc-flex li::after
+    {
+        display: none;
+    }
+
+    #sscBusinessHome
+    {
+        min-height: 300px;
+        background-color: var(--dark-color);
+    }
+
+    #sscBusinessHome .ssc-container
+    {
+        padding: 3rem 1rem;
+    }
+
+    .ssc-business-section-title p
+    {
+        display: none;
+    }
+
+    .ssc-business-section-title-underline::after
+    {
+        left: 40%;
+    }
+
+    .ssc-business-work-single img
+    {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+    
+    #sscBusinessMainFormContent div
+    {
+        padding: 2rem 1rem;
+        flex: 1 0 88.33%;
+        max-width: 88.33%;
+    }
+
+    #sscBusinessMainFormContent form div
+    {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
